@@ -10,45 +10,46 @@
 */
 
 void adicao(){
-    int x, y;
+    double x, y;
     printf("Digite o primeiro número:\n");
-    scanf("%d", &x);
+    scanf("%lf", &x);
     printf("Digite o segundo número:\n");
-    scanf("%d", &y);
-    printf("Resultado: %d + %d = %d\n", x, y, x+y);
+    scanf("%lf", &y);
+    printf("Resultado: %g + %g = %g\n", x, y, x+y);
 }
 
 void subtracao(){
-    int x, y;
+    double x, y;
     printf("Digite o primeiro número:\n");
-    scanf("%d", &x);
+    scanf("%lf", &x);
     printf("Digite o segundo número:\n");
-    scanf("%d", &y);
-    printf("Resultado: %d - %d = %d\n", x, y, x-y);
+    scanf("%lf", &y);
+    printf("Resultado: %g - %g = %g\n", x, y, x-y);
 }
 
 void multiplicacao(){
-    int x, y;
+    double x, y;
     printf("Digite o primeiro número:\n");
-    scanf("%d", &x);
+    scanf("%lf", &x);
     printf("Digite o segundo número:\n");
-    scanf("%d", &y);
-    printf("Resultado: %d × %d = %d\n", x, y, x*y);
+    scanf("%lf", &y);
+    printf("Resultado: %g × %g = %g\n", x, y, x*y);
 }
 
 void divisao(){
-    int x, y;
+    double x, y;
     printf("Digite o primeiro número:\n");
-    scanf("%d", &x);
+    scanf("%lf", &x);
     printf("Digite o segundo número:\n");
-    scanf("%d", &y);
+    scanf("%lf", &y);
     if(y==0){
         printf("Erro: Divisão por zero não é permitida.\n");
     }
     else{
-        printf("Resultado: %d ÷ %d = %d\n", x, y, x/y);
+        printf("Resultado: %g ÷ %g = %g\n", x, y, x/y);
     }
 }
+
 
 int main(){
     for(int controlador=0;controlador==0;){
@@ -86,14 +87,15 @@ int main(){
 
         case 5:
             controlador++;
-            break;
+            printf("Obrigado por usar a calculadora! Até a próxima.");
+                return 0;
 
         default:
             printf("Erro: Resposta inválida.\n");
             break;
         }
 
-        printf("Deseja realizar outra operação? (s/n):\n");
+         printf("Deseja realizar outra operação? (s/n):\n");
         char r[2];
         scanf(" %c", &r[0]);
         for(;r[0]!='N'&&r[0]!='n'&&r[0]!='S'&&r[0]!='s';){
@@ -106,6 +108,7 @@ int main(){
         else if(r[0]=='S'||r[0]=='s'){
             continue;
         }
+        
         
     }
 
