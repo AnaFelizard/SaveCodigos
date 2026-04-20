@@ -20,36 +20,36 @@ void menu(){
 
 void soma(){
     double v1, v2;
-    printf("Digite o primeiro número:\n");
+    printf("Digite o primeiro número: \n");
     scanf("%lf",&v1);
-    printf("Digite o segundo número:\n");
+    printf("Digite o segundo número: \n");
     scanf("%lf",&v2);
     double resp=v1+v2;
     printf("Resultado: %lf + %lf = %.2lf\n", v1, v2, resp);
 }
 void subtracao(){
     double v1, v2;
-    printf("Digite o primeiro número:\n");
+    printf("Digite o primeiro número: \n");
     scanf("%lf",&v1);
-    printf("Digite o segundo número:\n");
+    printf("Digite o segundo número: \n");
     scanf("%lf",&v2);
     double resp=v1-v2;
     printf("Resultado: %lf - %lf = %.2lf\n", v1, v2, resp);
 }
 void multiplicacao(){
     double v1, v2;
-    printf("Digite o primeiro número:\n");
+    printf("Digite o primeiro número: \n");
     scanf("%lf",&v1);
-    printf("Digite o segundo número:\n");
+    printf("Digite o segundo número: \n");
     scanf("%lf",&v2);
     double resp=v1*v2;
     printf("Resultado: %lf * %lf = %.2lf\n", v1, v2, resp);
 }
 void divisao(){
     double v1, v2;
-    printf("Digite o primeiro número:\n");
+    printf("Digite o primeiro número: \n");
     scanf("%lf",&v1);
-    printf("Digite o segundo número:\n");
+    printf("Digite o segundo número: \n");
     scanf("%lf",&v2);
     if(v2==0){
         printf("Erro: Divisão por zero não é permitida.");
@@ -63,7 +63,7 @@ void divisao(){
 bool reset(){
     int infinito=1;
     while(infinito==1){
-    printf("Deseja realizar outra operação? (y/n):\n");
+    printf("Deseja realizar outra operação? (s/n):\n");
     char c; scanf(" %c", &c);
     if(c=='y'||c=='Y'){
         return true;
