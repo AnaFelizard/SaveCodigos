@@ -63,9 +63,9 @@ void divisao(){
 bool reset(){
     int infinito=1;
     while(infinito==1){
-    printf("Deseja realizar outra operação? (s/n):\n");
+    printf("Deseja realizar outra operação? (y/n):\n");
     char c; scanf(" %c", &c);
-    if(c=='s'||c=='S'){
+    if(c=='y'||c=='Y'){
         return true;
     }
     else if(c=='n'||c=='N'){
@@ -111,6 +111,7 @@ int main()
             
         default:
         printf("Entrada invalida.\nPor favor, digite um numero de 1 a 5\n");
+        continue;
     }
     if(!reset()){
         saida();
