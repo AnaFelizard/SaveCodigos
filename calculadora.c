@@ -21,50 +21,50 @@ void menu(){
 void soma(){
     double v1, v2;
     printf("Digite o primeiro número:\n");
-    scanf("%s",&v1);
+    scanf("%lf",&v1);
     printf("Digite o segundo número:\n");
-    scanf("%s",&v2);
+    scanf("%lf",&v2);
     double resp=v1+v2;
-    printf("Resultado: %s + %s = %.2s\n", v1, v2, resp);
+    printf("Resultado: %lf + %lf = %.2lf\n", v1, v2, resp);
 }
 void subtracao(){
     double v1, v2;
     printf("Digite o primeiro número:\n");
-    scanf("%s",&v1);
+    scanf("%lf",&v1);
     printf("Digite o segundo número:\n");
-    scanf("%s",&v2);
+    scanf("%lf",&v2);
     double resp=v1-v2;
-    printf("Resultado: %s - %s = %.2s\n", v1, v2, resp);
+    printf("Resultado: %lf - %lf = %.2lf\n", v1, v2, resp);
 }
 void multiplicacao(){
     double v1, v2;
     printf("Digite o primeiro número:\n");
-    scanf("%s",&v1);
+    scanf("%lf",&v1);
     printf("Digite o segundo número:\n");
-    scanf("%s",&v2);
+    scanf("%lf",&v2);
     double resp=v1*v2;
-    printf("Resultado: %s * %s = %.2s\n", v1, v2, resp);
+    printf("Resultado: %lf * %lf = %.2lf\n", v1, v2, resp);
 }
 void divisao(){
     double v1, v2;
     printf("Digite o primeiro número:\n");
-    scanf("%s",&v1);
+    scanf("%lf",&v1);
     printf("Digite o segundo número:\n");
-    scanf("%s",&v2);
+    scanf("%lf",&v2);
     if(v2==0){
         printf("Erro: Divisão por zero não é permitida.");
     }
     else{
     double resp=v1/v2;
-    printf("Resultado: %s / %s = %.2s\n", v1, v2, resp);
+    printf("Resultado: %lf / %lf = %.2lf\n", v1, v2, resp);
     }
 }
 
 bool reset(){
     int infinito=1;
-    while(infinito=1){
+    while(infinito==1){
     printf("Deseja realizar outra operação? (s/n):\n");
-    char c; scanf("%c", &c);
+    char c; scanf(" %c", &c);
     if(c=='s'||c=='S'){
         return true;
     }
@@ -73,7 +73,6 @@ bool reset(){
     }
     else{
         printf("Resposta inválida. Por favor, digite 's' para sim ou 'n' para não.");
-        break;
     }
         
   }
@@ -88,7 +87,7 @@ int main()
     while(infinito==1){
     menu();
     int option;
-    scanf("%s, option");
+    scanf("%d", &option);
     switch(option){
         case 1:
             soma();
