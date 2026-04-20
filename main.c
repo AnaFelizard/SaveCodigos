@@ -87,7 +87,11 @@ int main()
     while(infinito==1){
     menu();
     int option;
-    scanf("%d", &option);
+    if (scanf("%d", &option) != 1) {
+    printf("Entrada invalida.\nPor favor, digite um numero de 1 a 5\n");
+    while (getchar() != '\n');
+    continue;
+    }
     switch(option){
         case 1:
             soma();
