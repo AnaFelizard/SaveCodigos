@@ -75,7 +75,6 @@ bool reset(){
         printf("Resposta inválida. Por favor, digite 's' para sim ou 'n' para não.");
     }
   }
-  return false; 
 }
 void saida(){
     printf("Obrigado por usar a calculadora! Até a próxima.");
